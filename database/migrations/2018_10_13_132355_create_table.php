@@ -18,7 +18,7 @@ class CreateTable extends Migration
             $table->string('name');
             $table->string('mail');
             $table->integer('age');
-            $table->timestamp();
+            $table->timestamps();
         });
     }
 
