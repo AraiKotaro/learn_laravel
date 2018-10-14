@@ -1,23 +1,36 @@
 <html>
 <head>
     <title>@yield('title')</title>
+    <link href="{{ asset('/css/bootstrap.css') }}" rel="stylesheet">
+    <link href="{{ asset('/css/bootstrap-datepicker.css') }}" rel="stylesheet">
     <script src="{{ asset('/js/jquery-3.3.1.js') }}"></script>
+    <script src="{{ asset('/js/bootstrap-datepicker.js') }}"></script>
+    <script src="{{ asset('/js/bootstrap-datepicker.ja.js') }}"></script>
     <script>
+        $(function(){
+            $('input[name="date[]"]').datepicker({language: 'ja'});
+        });
         $(document).on('click', '#add', function(e) {
             var tr_row = '' +
-                '<tr>' +
-                    '<td>' +
-                        '<input type="text" name="date[]">' +
-                        '<input type="hidden" name="id[]">' +
-                    '</td>' +
-                    '<td>' +
-                        '<input type="text" name="todo[]">' +
-                    '</td>' +
-                    '<td>' +
-                        '<input type="button" name="delete">' +
-                    '</td>' +
-                '</tr>';
+            '<tr>' +
+                '<td>' +
+                    '<input type="text" name="date[]"' +
+                        'class="form-control">' +
+                    '<input type="hidden" name="id[]"' +
+                        'class="form-control">' +
+                '</td>' +
+                '<td>' +
+                    '<input type="text" name="todo[]"' +
+                        'class="form-control">' +
+                '</td>' +
+                '<td>' +
+                    '<input type="button" name="delete"' +
+                        'class="form-control"' +
+                        'value="削除">' +
+                '</td>' +
+            '</tr>';
             $(tr_row).appendTo($('#table_body'));
+            $('input[name="date[]"]').datepicker({language: 'ja'});
         });
         $(document).on('click', 'input[name="delete"]', function(e) {
             var delete_id = $(this).parent().parent().find('input[name="id[]"]').val();
@@ -45,18 +58,18 @@
     </style>
 </head>
 <body>
-    <h1>@yield('title')</h1>
-    @section('menubar')
-    <ul>
-        <p class="menutitle">※メニュー</p>
-        <li>@show</li>
-    </ul>
-    <hr size="1">
-    <div class="content">
-    @yield('content')
-    </div>
-    <div class="footer">
-    @yield('footer')
+    <div class="container">
+        <h1>@yield('title')</h1>
+        @section('menubar')
+        <ul>
+            <p class="menutitle">ToDo入力</p>
+        </ul>
+        <div class="content">
+        @yield('content')
+        </div>
+        <div class="footer">
+        @yield('footer')
+        </div>
     </div>
 </body>
 </html>
