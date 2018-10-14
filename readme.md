@@ -9,7 +9,7 @@ ToDoの登録・更新・削除ができます。<br />
 言語:PHP7.2<br />
 フレームワーク:Laravel<br />
 データベース:SQLite<br />
-デザイン:BootStrap<br />
+デザイン:BootStrap(Vue.jsに切り替える予定)<br />
 <br />
 ローカルの環境構築:docker<br />
 使用コンテナ:Laradock<br />
