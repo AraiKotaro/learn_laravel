@@ -14,7 +14,7 @@
                         '<input type="text" name="todo[]">' +
                     '</td>' +
                     '<td>' +
-                        '<input type="checkbox" name="delete[]">' +
+                        '<input type="button" name="delete">' +
                     '</td>' +
                 '</tr>';
             $(tr_row).appendTo($('#table_body'));
