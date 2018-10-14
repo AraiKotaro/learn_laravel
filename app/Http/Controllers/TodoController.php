@@ -14,6 +14,12 @@ class TodoController extends Controller
     }
     public function edit(Request $request) {
         for ($i = 0; $i < count($request->id); $i++) {
+
+            if (empty($request->date[$i])
+                or empty($request->todo[$i])) {
+                continue;
+            }
+
             $param = [
                 'date' => $request->date[$i],
                 'todo' => $request->todo[$i],
