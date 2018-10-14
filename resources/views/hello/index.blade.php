@@ -1,4 +1,4 @@
-@extends('Layouts.helloapp')
+@extends('layouts.helloapp')
 
 @section('title', 'Index')
 @section('menubar')
