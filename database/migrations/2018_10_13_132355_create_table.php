@@ -18,7 +18,12 @@ class CreateTable extends Migration
             $table->string('name');
             $table->string('mail');
             $table->integer('age');
-            $table->timestamps();
+        });
+        Schema::create('todo', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('date');
+            $table->string('todo');
+            $table->integer('status');
         });
     }
 
@@ -30,5 +35,6 @@ class CreateTable extends Migration
     public function down()
     {
         Schema::dropIfExists('people');
+        Schema::dropIfExists('todo');
     }
 }

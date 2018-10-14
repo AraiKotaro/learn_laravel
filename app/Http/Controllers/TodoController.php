@@ -4,18 +4,35 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Illuminate\Support\Facades\DB;
 
 class TodoController extends Controller
 {
     public function index() {
-        $data = [
-            ['date'=>'10/13', 'todo'=>'歯磨き粉を買う'],
-            ['date'=>'10/14', 'todo'=>'洗剤を買う'],
-            ['date'=>'10/15', 'todo'=>'髪を切る']
-        ];
-        return view('todo.index', ['data'=>$data]);
+        $items = DB::select('select * from todo');
+        return view('todo.index', ['items' => $items]);
     }
-    public function post(Request $request) {
-        return view('todo.index', ['msg'=>$request->msg]);
+    public function edit(Request $request) {
+        for ($i = 0; $i < count($request->id); $i++) {
+            $param = [
+                'date' => $request->date[$i],
+                'todo' => $request->todo[$i],
+            ];
+            if (empty($request->id[$i])) {
+                DB::table('todo')
+                    ->insert($param);
+            } else {
+                DB::table('todo')
+                    ->where('id', $request->id[$i])
+                    ->update($param);
+            }
+        }
+        return redirect('/todo');
+    }
+    public function delete(Request $request) {
+        DB::table('todo')
+            ->where('id', $request->id)
+            ->delete();
+        return redirect('/todo');
     }
 }
