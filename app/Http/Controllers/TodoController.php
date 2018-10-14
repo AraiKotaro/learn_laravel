@@ -17,6 +17,7 @@ class TodoController extends Controller
             $param = [
                 'date' => $request->date[$i],
                 'todo' => $request->todo[$i],
+                'status' => 0,
             ];
             if (empty($request->id[$i])) {
                 DB::table('todo')
