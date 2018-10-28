@@ -27,3 +27,4 @@ const app = new Vue({
 });
 
 window.Holder = require('./holder');
+window.$ = require('./jquery-3.3.1');

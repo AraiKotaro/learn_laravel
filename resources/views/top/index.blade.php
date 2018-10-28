@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -113,18 +113,17 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="{{ url('/hello') }}">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="{{ url('/#') }}">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ url('/hello') }}">Link</a>
+              <a class="nav-link" href="{{ url('/#') }}">Link</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="{{ url('/hello') }}">Disabled</a>
+              <a class="nav-link disabled" href="{{ url('/#') }}">Disabled</a>
             </li>
           </ul>
           <form class="form-inline mt-2 mt-md-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <gcse:searchbox-only>
           </form>
         </div>
       </nav>
@@ -146,8 +145,8 @@
             <div class="container">
               <div class="carousel-caption text-left">
                 <h1>ハローワールド</h1>
-                <p>PHPフレームワーク Laravel入門（<a href="https://www.amazon.co.jp/gp/product/B07CLLW4MX">https://www.amazon.co.jp/gp/product/B07CLLW4MX</a>） を参考に、学習用に作成したもの</p>
-                <p><a class="btn btn-lg btn-primary" href="{{ url('/hello') }}" role="button">Sign up today</a></p>
+                <p>（<a href="javascript:opentab('https://www.amazon.co.jp/gp/product/B07CLLW4MX')">PHPフレームワーク Laravel入門</a>） を参考に、学習用に作成したもの</p>
+                <p><a class="btn btn-lg btn-primary" href="{{ url('/hello') }}" role="button">開く</a></p>
               </div>
             </div>
           </div>
@@ -159,7 +158,7 @@
               <div class="carousel-caption">
                 <h1>ToDo</h1>
                 <p>データベース追加・更新・削除の学習に作成したToDo管理ページ</p>
-                <p><a class="btn btn-lg btn-primary" href="{{ url('/todo') }}" role="button">Learn more</a></p>
+                <p><a class="btn btn-lg btn-primary" href="{{ url('/todo') }}" role="button">開く</a></p>
               </div>
             </div>
           </div>
@@ -170,8 +169,8 @@
             <div class="container">
               <div class="carousel-caption text-right">
                 <h1>出席管理</h1>
-                <p>Laravel+Vue の学習のために、<a href="https://luftgarden.work/laravel-vue-attendance-part">https://luftgarden.work/laravel-vue-attendance-part</a>のソースコードを模倣し作成。</p>
-                <p><a class="btn btn-lg btn-primary" href="{{ url('/attends') }}" role="button">Browse gallery</a></p>
+                <p>Laravel+Vue の学習のために、<a href="javascript:opentab('https://luftgarden.work/laravel-vue-attendance-part1/')'">LuftGarden</a>にあるソースコードを模倣し作成。</p>
+                <p><a class="btn btn-lg btn-primary" href="{{ url('/attends') }}" role="button">開く</a></p>
               </div>
             </div>
           </div>
@@ -200,20 +199,20 @@
               src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
               alt="Generic placeholder image" width="140" height="140">
             <h2>ハローワールド</h2>
-            <p><a href="https://www.amazon.co.jp/gp/product/B07CLLW4MX">https://www.amazon.co.jp/gp/product/B07CLLW4MX</a> を参考に、学習用に作成したもの</p>
-            <p><a class="btn btn-secondary" href="{{ url('/hello') }}" role="button">View details &raquo;</a></p>
+            <p><a href="javascript:opentab('https://www.amazon.co.jp/gp/product/B07CLLW4MX')">PHPフレームワーク Laravel入門</a> を参考に、学習用に作成したもの</p>
+            <p><a class="btn btn-secondary" href="{{ url('/hello') }}" role="button">開く &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
             <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
             <h2>ToDo</h2>
             <p>データベース追加・更新・削除の学習に作成したToDo管理ページ</p>
-            <p><a class="btn btn-secondary" href="{{ url('/todo') }}" role="button">View details &raquo;</a></p>
+            <p><a class="btn btn-secondary" href="{{ url('/todo') }}" role="button">開く &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
             <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
             <h2>出席管理</h2>
-            <p>Laravel+Vue の学習のために、<a href="https://luftgarden.work/laravel-vue-attendance-part">https://luftgarden.work/laravel-vue-attendance-part</a>のソースコードを模倣し作成。</p>
-            <p><a class="btn btn-secondary" href="{{ url('/attends') }}" role="button">View details &raquo;</a></p>
+            <p>Laravel+Vue の学習のために、<a href="javascript:opentab('https://luftgarden.work/laravel-vue-attendance-part')">LuftGarden</a>のソースコードを模倣し作成。</p>
+            <p><a class="btn btn-secondary" href="{{ url('/attends') }}" role="button">開く &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
 
@@ -225,7 +224,7 @@
         <div class="row featurette">
           <div class="col-md-7">
             <h2 class="featurette-heading">このページはBootStrap4サンプルページのCarouselを使用しました。</h2>
-            <p class="lead"><a href="https://getbootstrap.com/docs/4.0/examples/carousel/">https://getbootstrap.com/docs/4.0/examples/carousel/</a></p>
+            <p class="lead"><a href="javascript:opentab('https://getbootstrap.com/docs/4.0/examples/carousel/')">Carousel Template for Bootstrap</a></p>
           </div>
           <div class="col-md-5">
             <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
@@ -237,7 +236,7 @@
         <div class="row featurette">
           <div class="col-md-7 order-md-2">
             <h2 class="featurette-heading">ソースコードはGitHubリポジトリを参照ください。</h2>
-            <p class="lead"><a href="https://github.com/AraiKotaro/learn_laravel">https://github.com/AraiKotaro/learn_laravel</a></p>
+            <p class="lead"><a href="javascript:opentab('https://github.com/AraiKotaro/learn_laravel')">AraiKotaro/learn_laravel</a></p>
           </div>
           <div class="col-md-5 order-md-1">
             <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
@@ -254,7 +253,7 @@
       <!-- FOOTER -->
       <footer class="container">
         <p class="float-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2018 Arai Kotaro &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <p>Arai Kotaro ※このページは個人の学習成果の明らかにすることを目的としており、サービスの実施など、実用を目的としたものではございません。</p>
       </footer>
     </main>
 
@@ -263,5 +262,21 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="{{ mix('js/app.js') }}"></script> <!-- *2 -->
+    <script>
+      (function() {
+        var cx = '008157555996760823791:7px88xaztzy';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
+    <script>
+      function opentab(url) {
+        var win = window.open(url, '_blank');
+      }
+    </script>
   </body>
 </html>
