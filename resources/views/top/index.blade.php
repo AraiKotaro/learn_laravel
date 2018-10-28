@@ -169,7 +169,7 @@
             <div class="container">
               <div class="carousel-caption text-right">
                 <h1>出席管理</h1>
-                <p>Laravel+Vue の学習のために、<a href="javascript:opentab('https://luftgarden.work/laravel-vue-attendance-part1/')'">LuftGarden</a>にあるソースコードを模倣し作成。</p>
+                <p>Laravel+Vue の学習のために、<a href="javascript:opentab('https://luftgarden.work/laravel-vue-attendance-part1/')">LuftGarden</a>にあるソースコードを模倣し作成。</p>
                 <p><a class="btn btn-lg btn-primary" href="{{ url('/attends') }}" role="button">開く</a></p>
               </div>
             </div>
