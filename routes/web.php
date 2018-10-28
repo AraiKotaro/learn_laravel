@@ -18,10 +18,11 @@
 Route::get('hello', 'HelloController@index');
 Route::post('hello', 'HelloController@post');
 
-Route::get('/', 'TodoController@index');
+Route::get('todo', 'TodoController@index');
 Route::post('todo', 'TodoController@edit');
 Route::post('delete', 'TodoController@delete');
 
 Route::get('attends', 'AttendancesController@index')->name('home');
 Route::get('attend', 'AttendancesController@create')->name('attend');
 
+Route::get('/', function() { return view('top/index'); });
