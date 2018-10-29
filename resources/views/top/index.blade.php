@@ -136,6 +136,7 @@
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#myCarousel" data-slide-to="1"></li>
           <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -182,7 +183,7 @@
               <div class="carousel-caption text-left">
                 <h1>Vue.jsでのToDo（作成予定）</h1>
                 <p>Vue.jsの学習を踏まえ、ToDoを新しく作成する（11月着手予定）</p>
-                <p><a class="btn btn-lg btn-primary" href="{{ url('/#') }}" role="button">開く</a></p>
+                <p><a class="btn btn-lg btn-primary" href="{{ url('/#') }}" role="button">作成予定</a></p>
               </div>
             </div>
           </div>
