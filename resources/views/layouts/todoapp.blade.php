@@ -11,25 +11,25 @@
             $('input[name="date[]"]').datepicker({language: 'ja'});
         });
         $(document).on('click', '#add', function(e) {
-            var tr_row = '' +
-            '<tr>' +
-                '<td>' +
+            var row = '' +
+            '<div class="row">' +
+                '<div class="col-lg-4">' +
                     '<input type="text" name="date[]"' +
                         'class="form-control">' +
                     '<input type="hidden" name="id[]"' +
                         'class="form-control">' +
-                '</td>' +
-                '<td>' +
+                '</div>' +
+                '<div class="col-lg-6">' +
                     '<input type="text" name="todo[]"' +
                         'class="form-control">' +
-                '</td>' +
-                '<td>' +
+                '</div>' +
+                '<div class="col-lg-2">' +
                     '<input type="button" name="delete"' +
                         'class="form-control"' +
                         'value="削除">' +
-                '</td>' +
-            '</tr>';
-            $(tr_row).appendTo($('#table_body'));
+                '</div>' +
+            '</div>';
+            $('#buttons').before(row);
             $('input[name="date[]"]').datepicker({language: 'ja'});
         });
         $(document).on('click', 'input[name="delete"]', function(e) {
