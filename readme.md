@@ -3,13 +3,23 @@ Learn_Laravel
 
 Kotaro AraiのLaravel学習用リポジトリです。
 
-## Description
+## Hello
+http://deploy-learn-laravel.com/hello<br />
+
+PHPフレームワーク Laravel入門<br />
+https://www.amazon.co.jp/gp/product/B07CLLW4MX<br />
+を読みつつ作成。<br />
+時間の都合で、作成途中でVue.jsの学習に移りました。<br />
+
+## ToDo
+http://deploy-learn-laravel.com/todo<br />
+
 ToDoの登録・更新・削除ができます。<br />
 <br />
 言語:PHP7.2<br />
 フレームワーク:Laravel<br />
 データベース:SQLite<br />
-デザイン:BootStrap(Vue.jsに切り替える予定)<br />
+デザイン:BootStrap3<br />
 <br />
 ローカルの環境構築:docker<br />
 使用コンテナ:Laradock<br />
@@ -17,12 +27,19 @@ ToDoの登録・更新・削除ができます。<br />
 デプロイ:AWS EC2<br />
 (ECSは不使用)<br />
 <br />
-## Demo
-http://deploy-learn-laravel.com
 
-## Licence
+## 出席管理
+http://deploy-learn-laravel.com/attends<br />
 
-[MIT](https://github.com/tcnksm/tool/blob/master/LICENCE)
+Vue.jsの構造を把握するために、<br />
+Laravel + Vue.js で出席管理Webアプリを作成する – Part.1<br />
+https://luftgarden.work/laravel-vue-attendance-part1/<br />
+を参考にし作成。<br />
+
+Laravelを利用したマイグレーション、シーディング、<br />
+Vue.jsでのコンポーネント作成、<br />
+Webpack(LaravelMix)を使用した、パッケージ管理、<br />
+CSS, JavaScriptの管理を学習。<br />
 
 ## Author
 
