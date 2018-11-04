@@ -1,12 +1,12 @@
-@extends('master')
+@extends('todo2master')
  
 @section('content')
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a href="{{ route('attend') }}">出席登録画面へ</a>
+        <a href="{{ route('todo2_create') }}">ToDo作成</a>
     </nav>
     <div class="row">
         <div class="col-md-12">
-            <attendances></attendances> <!-- *1 -->
+            <todo2s></todo2s>
         </div>
     </div>
 @endsection

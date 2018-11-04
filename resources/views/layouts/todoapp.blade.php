@@ -34,7 +34,6 @@
         });
         $(document).on('click', 'input[name="delete"]', function(e) {
             var delete_id = $(this).parent().parent().find('input[name="id[]"]').val();
-            //alert(delete_id + $('input[name="_token"]').val());
             $.post(
                 'delete',
                 {

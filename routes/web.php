@@ -25,4 +25,7 @@ Route::post('delete', 'TodoController@delete');
 Route::get('attends', 'AttendancesController@index')->name('home');
 Route::get('attend', 'AttendancesController@create')->name('attend');
 
+Route::get('todo2s', 'Todo2sController@index')->name('todo2_home');
+Route::get('todo2s_create', 'Todo2sController@create')->name('todo2_create');
+
 Route::get('/', function() { return view('top/index'); });

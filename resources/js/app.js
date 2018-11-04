@@ -22,6 +22,9 @@ Vue.component('paginate', require('vuejs-paginate'));
 Vue.component('attendances', require('./components/Attendances.vue'));
 Vue.component('attendance-form', require('./components/AttendanceForm.vue'));
 
+Vue.component('todo2s', require('./components/Todo2s.vue'));
+Vue.component('todo2-form', require('./components/Todo2Form.vue'));
+
 const app = new Vue({
     el: '#app'
 });

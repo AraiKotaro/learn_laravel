@@ -21,3 +21,7 @@ Route::resource('attendances', 'Api\AttendancesController')
     ->only(['index', 'show', 'store']);
 Route::put('attendances/{attendance}/report',
     'Api\ReportAttendancesController@update');
+
+Route::resource('todo2s', 'Api\Todo2sController')
+    ->only(['index', 'show', 'store']);
+Route::put('todo2s/{todo2}/done', 'Api\DoneTodo2sController@update');
