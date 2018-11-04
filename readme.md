@@ -10,9 +10,9 @@ Kotaro AraiのLaravel学習用リポジトリです。
 ・Vue.jsコンポーネントを使用し、リスト表示、入力フォームを作成する手順がわかった。<br />
 
 # 課題
-・webpack(LaravelMix)の使用方法が良くわかっていない。<br />
-・Amazon Elastic Container Service (Amazon ECS)の使用方法が分かっていない。<br />
- (AWSにデプロイする際は、コンテナベースではなく、ECSサーバーを開発環境と同様にセットアップしている)<br />
+・webpack(LaravelMix)の使用方法が把握できていない。<br />
+・Amazon Elastic Container Service (Amazon ECS)を使用したコンテナベースのデプロイができなかった。<br />
+ (AWSにデプロイする際は、コンテナベースではなく、EC2サーバーを開発環境と同様にセットアップしている)<br />
 
 # Vue.js版Todo管理
 ToDoの入力と、完了の入力ができる。<br />
