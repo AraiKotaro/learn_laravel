@@ -8,12 +8,11 @@ Kotaro AraiのLaravel学習用リポジトリです。
 ・php artisanコマンドで、Migration, Seederを使いデータベースを初期化する手順がわかった。<br />
 　（SQLiteを使用）<br />
 ・Vue.jsコンポーネントを使用し、リスト表示、入力フォームを作成する手順がわかった。<br />
-<br />
 
 # 課題
 ・webpack(LaravelMix)の使用方法が良くわかっていない。<br />
-・AWSにコンテナ単位でデプロイする手順(CDSの使用方法）が分かっていない。<br />
- (AWSにデプロイする際は、開発環境と同様にセットアップしている)<br />
+・Amazon Elastic Container Service (Amazon ECS)の使用方法が分かっていない。<br />
+ (AWSにデプロイする際は、コンテナベースではなく、ECSサーバーを開発環境と同様にセットアップしている)<br />
 
 # Vue.js版Todo管理
 ToDoの入力と、完了の入力ができる。<br />
