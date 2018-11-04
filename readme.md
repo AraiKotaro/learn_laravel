@@ -3,12 +3,38 @@ Learn_Laravel
 
 Kotaro AraiのLaravel学習用リポジトリです。
 
-## Hello
-http://deploy-learn-laravel.com/hello<br />
+# 現在の学習状況
+・Laravelの、Contoroller, Model, Resource, Viewを組み合わせてWebサイトを作る構造がわかった。<br />
+・php artisanコマンドで、Migration, Seederを使いデータベースを初期化する手順がわかった。<br />
+　（SQLiteを使用）<br />
+・Vue.jsコンポーネントを使用し、リスト表示、入力フォームを作成する手順がわかった。<br />
+<br />
 
-PHPフレームワーク Laravel入門を読みつつ作成。<br />
-https://www.amazon.co.jp/gp/product/B07CLLW4MX<br />
-時間の都合で、作成途中でVue.jsの学習に移りました。<br />
+# 課題
+・webpack(LaravelMix)の使用方法が良くわかっていない。<br />
+・AWSにコンテナ単位でデプロイする手順(CDSの使用方法）が分かっていない。<br />
+ (AWSにデプロイする際は、開発環境と同様にセットアップしている)<br />
+
+# Vue.js版Todo管理
+ToDoの入力と、完了の入力ができる。<br />
+http://deploy-learn-laravel.com/todo2s<br />
+
+ToDo管理をVue.jsを使用し作成。<br />
+できる操作は、ToDoの登録と完了のみ。<br />
+学習を兼ねて、機能を拡張させたい。<br />
+
+<br />
+言語:PHP7.2<br />
+フレームワーク:Laravel, Vue.js<br />
+データベース:SQLite<br />
+デザイン:BootStrap4<br />
+<br />
+ローカルの環境構築:docker<br />
+使用コンテナ:Laradock<br />
+<br />
+デプロイ:AWS EC2<br />
+(ECSは不使用)<br />
+<br />
 
 ## ToDo
 ToDoの登録・更新・削除ができる。<br />
@@ -40,10 +66,12 @@ Vue.jsでのコンポーネント作成、<br />
 Webpack(LaravelMix)を使用した、パッケージ管理、<br />
 CSS, JavaScriptの管理を学習。<br />
 
-# Vue.js版Todo管理
-作成予定...。<br />
-Lavavelの初歩的な知識で作成したToDo管理をVue.jsのコンポーネントを使って作り直したい。<br />
-10月中には間に合わなかったため、11月に取り組む予定。<br />
+## Hello
+http://deploy-learn-laravel.com/hello<br />
+
+PHPフレームワーク Laravel入門を読みつつ作成。<br />
+https://www.amazon.co.jp/gp/product/B07CLLW4MX<br />
+時間の都合で、作成途中でVue.jsの学習に移りました。<br />
 
 ## Author
 
