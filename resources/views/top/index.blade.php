@@ -136,7 +136,6 @@
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#myCarousel" data-slide-to="1"></li>
           <li data-target="#myCarousel" data-slide-to="2"></li>
-          <li data-target="#myCarousel" data-slide-to="3"></li>
         </ol>
         <div class="carousel-inner">
         <div class="carousel-item active">
@@ -168,22 +167,10 @@
               src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
               alt="third slide">
             <div class="container">
-              <div class="carousel-caption text-center">
+              <div class="carousel-caption text-left">
                 <h1>ToDo管理（Vue.jsなし）</h1>
                 <p>データベース追加・更新・削除の学習に作成したToDo管理ページ</p>
                 <p><a class="btn btn-lg btn-primary" href="{{ url('/todo') }}" role="button">開く</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img class="forth-slide"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
-              alt="forth slide">
-            <div class="container">
-              <div class="carousel-caption text-left">
-                <h1>ハローワールド</h1>
-                <p>（<a href="javascript:opentab('https://www.amazon.co.jp/gp/product/B07CLLW4MX')">PHPフレームワーク Laravel入門</a>） を参考に、学習用に作成したもの</p>
-                <p><a class="btn btn-lg btn-primary" href="{{ url('/hello') }}" role="button">開く</a></p>
               </div>
             </div>
           </div>
@@ -207,31 +194,23 @@
 
         <!-- Three columns of text below the carousel -->
         <div class="row">
-          <div class="col-lg-3">
+          <div class="col-lg-4">
             <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
             <h2>Vue.jsを使用したToDo管理</h2>
             <p>ToDo管理を、Vue.jsの学習を踏まえて作成しなおしました。</p>
             <p><a class="btn btn-secondary" href="{{ url('/todo2s') }}" role="button">開く &raquo;</a></p>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-4">
             <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
             <h2>ToDo</h2>
             <p>データベース追加・更新・削除の学習に作成したToDo管理ページ</p>
             <p><a class="btn btn-secondary" href="{{ url('/todo') }}" role="button">開く &raquo;</a></p>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-4">
             <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
             <h2>出席管理</h2>
             <p>Laravel+Vue の学習のために、<a href="javascript:opentab('https://luftgarden.work/laravel-vue-attendance-part')">LuftGarden</a>のソースコードを模倣し作成。</p>
             <p><a class="btn btn-secondary" href="{{ url('/attends') }}" role="button">開く &raquo;</a></p>
-          </div>
-          <div class="col-lg-3">
-            <img class="rounded-circle"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
-              alt="Generic placeholder image" width="140" height="140">
-            <h2>ハローワールド</h2>
-            <p><a href="javascript:opentab('https://www.amazon.co.jp/gp/product/B07CLLW4MX')">PHPフレームワーク Laravel入門</a> を参考に、学習用に作成したもの</p>
-            <p><a class="btn btn-secondary" href="{{ url('/hello') }}" role="button">開く &raquo;</a></p>
           </div>
         </div><!-- /.row -->
 
